@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="welcome-message" class="fade-in">
+        <h1>Welcome, <span id="user-name"></span>.</h1>
+        <p class="subtitle">On the following page, you will be asked a series of questions.</p>
+        <p class="sub2">You must answer all questions correctly in order to progress.</p>
+
+        <!-- Continue Button -->
+        <button id="continue-btn" class="button">Continue</button>
+    </div>
+
+    <script>
+        // Retrieve the user's name from localStorage
+        const name = localStorage.getItem('visitorName');
+        document.getElementById('user-name').textContent = name ? name : "Guest";
+
+        // Redirect to the test page when the "Continue" button is clicked
+        document.getElementById('continue-btn').addEventListener('click', function () {
+            window.location.href = "test.html";
+        });
+    </script>
+</body>
+</html>

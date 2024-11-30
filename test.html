@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css"> <!-- Shared styling -->
+</head>
+<body>
+    <div id="test-screen" class="fade-in">
+        <h1>Take the Test</h1>
+        <form id="test-form">
+            <!-- Question 1 -->
+            <div class="question">
+                <p class=sub2><strong>1. You have four cards. Each card has a letter on one side and a number on the other. The cards show the following: A, D, 4, and 7.</strong></p>
+                <p class=sub2>A rule states: "If there is a vowel on one side of a card, then there is an even number on the other side."</p>
+                <p class=sub2>Which cards must you flip to verify the rule?</p>
+                <label>
+                    <input type="radio" id="q1-a" name="q1" value="A">
+                    A. A and D
+                </label><br>
+                <label>
+                    <input type="radio" id="q1-b" name="q1" value="B">
+                    B. A and 4
+                </label><br>
+                <label>
+                    <input type="radio" id="q1-c" name="q1" value="C">
+                    C. A and 7
+                </label><br>
+                <label>
+                    <input type="radio" id="q1-d" name="q1" value="D">
+                    D. A, D, and 7
+                </label><br>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="question">
+                <p class=sub2><strong>2. Mathematical Puzzle:</strong> You are on a treasure hunt and need to calculate the exact time when two clues will overlap. One clue is given every 12 minutes, and the other every 15 minutes. Both clues were given together at 10:00 AM.</p>
+                <p class=sub2>When will the clues next overlap?</p>
+                <label>
+                    <input type="radio" id="q2-a" name="q2" value="A">
+                    A. 10:45 AM
+                </label><br>
+                <label>
+                    <input type="radio" id="q2-b" name="q2" value="B">
+                    B. 10:30 AM
+                </label><br>
+                <label>
+                    <input type="radio" id="q2-c" name="q2" value="C">
+                    C. 10:20 AM
+                </label><br>
+                <label>
+                    <input type="radio" id="q2-d" name="q2" value="D">
+                    D. 11:00 AM
+                </label><br>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="question">
+                <p class=sub2><strong>3. Pattern Recognition:</strong> Find the next number in the sequence: 2, 6, 12, 20, 30, 42, ?</p>
+                <label>
+                    <input type="radio" id="q3-a" name="q3" value="A">
+                    A. 54
+                </label><br>
+                <label>
+                    <input type="radio" id="q3-b" name="q3" value="B">
+                    B. 56
+                </label><br>
+                <label>
+                    <input type="radio" id="q3-c" name="q3" value="C">
+                    C. 60
+                </label><br>
+                <label>
+                    <input type="radio" id="q3-d" name="q3" value="D">
+                    D. 62
+                </label><br>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="button" id="submit-test" class="button">Submit</button>
+        </form>
+    </div>
+    <script src="js/test.js"></script> <!-- JS for test functionality -->
+</body>
+</html>
