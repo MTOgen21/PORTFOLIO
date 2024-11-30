@@ -10,7 +10,7 @@ const countdown = setInterval(() => {
     // If time runs out, redirect to locked.html
     if (timeLeft <= 0) {
         clearInterval(countdown);
-        window.location.replace = "locked.html";
+        window.location.href = "locked.html";
     }
 }, 1000);
 
